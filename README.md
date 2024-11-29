@@ -8,6 +8,29 @@ This repository serves as a centralized resource for API and relevant documentat
 ## **Overview**
 This document outlines the API endpoints for interacting with the procurement platform. The endpoints cover procurement project management, supplier hub lots, and specifications/social values. Each endpoint includes details about the HTTP method, URL, required form data, and usage notes.
 
+###**Authentication Strategy**
+The API uses a Bearer Token for authentication. This token must be included in the ```Authorization``` header for all requests.
+
+```json
+Authorization: Bearer <access_token>
+```
+
+### **How to Use**
+1. Retrieve the Access Token:
+  - Obtain a valid ```access_token``` from the authentication system.
+2. Include the Token in Requests:
+  - Add the ```Authorization``` header with the Bearer Token in your API requests.
+3. Example Request:
+```json
+curl -X GET "https://staging.api.cpras.co.uk/api/procurement_projects" \
+-H "Authorization: Bearer YOUR_ACCESS_TOKEN"
+```
+4. Postman example
+- In Postman, under the "Authorization" tab:
+  - Set the Type to ```Bearer Token```.
+  - Paste the token into the Token field.
+    
+Header Format:
 
 ## **1. Procurement Project**
 
