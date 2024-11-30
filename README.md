@@ -8,7 +8,7 @@ This repository serves as a centralized resource for API and relevant documentat
 ## **Overview**
 This document outlines the API endpoints for interacting with the procurement platform. The endpoints cover procurement project management, supplier hub lots, and specifications/social values. Each endpoint includes details about the HTTP method, URL, required form data, and usage notes.
 
-###**Authentication Strategy**
+### **Authentication Strategy**
 The API uses a Bearer Token for authentication. This token must be included in the ```Authorization``` header for all requests.
 
 ```json
